@@ -17,7 +17,7 @@ public class DayMenu{
         mMeals.add(meal);
     }
 
-    public List<Meal> getmMeals() {
+    public List<Meal> getMeals() {
         return mMeals;
     }
 
