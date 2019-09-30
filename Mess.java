@@ -80,4 +80,12 @@ public class Mess{
     public void setStudents(List<Student> students) {
         this.students = students;
     }
+
+    public void addStudent(Student student){
+        students.add(student);
+    }
+
+    public void addWorker(Worker worker){
+        workers.add(worker);
+    }
 }
