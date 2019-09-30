@@ -1,4 +1,4 @@
-public class WorkerInfo
+public class Worker
 {
     private long workerId;
     private String Name;
