@@ -8,17 +8,13 @@ public class Mess{
     private List<Worker> workers;
     private Worker manager;
     private FAQ faq;
-    private List<LocalTIme> timings;
+    private List<LocalTime> timings;
+    private List<Student> students;
 
-    public Mess(List<Worker> workers, Worker manager, List<LocalTIme> timings) {
+    public Mess(List<Worker> workers, Worker manager, List<Student> students) {
         this.workers = workers;
         this.manager = manager;
-        this.timings = timings;
-    }
-
-    public Mess(List<Worker> workers, Worker manager) {
-        this.workers = workers;
-        this.manager = manager;
+        this.students = students;
     }
 
     public DailyWastage getDailyWastage() {
@@ -69,11 +65,19 @@ public class Mess{
         this.faq = faq;
     }
 
-    public List<LocalTIme> getTimings() {
+    public List<LocalTime> getTimings() {
         return timings;
     }
 
-    public void setTimings(List<LocalTIme> timings) {
+    public void setTimings(List<LocalTime> timings) {
         this.timings = timings;
+    }
+
+    public List<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(List<Student> students) {
+        this.students = students;
     }
 }
