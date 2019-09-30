@@ -12,8 +12,8 @@ public class WeekMenu{
         this.menus = mMenus;
     }
 
-    public void modifyWeekMenu(LocalDate date, DayMenu menu){
-
+    public void modifyWeekMenu(DayMenu menu){
+	this.menus.add(menu);
     }
 
     public int getWeekId() {
