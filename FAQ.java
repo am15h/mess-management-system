@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class FAQ{
 
     private int totalQues;
