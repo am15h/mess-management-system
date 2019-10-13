@@ -75,7 +75,15 @@ class Test {
         ls.add(s4);
 
         mymess.setStudents(ls);
+        
+        List<FAQItem> faqItems = new ArrayList<>();
+        faqItems.add(new FAQItem(LocalDate.now(), "Do mess workers recieve my feedback?", "Yes, they do recieve feedback and act on it."));
+        faqItems.add(new FAQItem(LocalDate.now(), "How can I see mess worker details?", "You can see details in workers section."));
 
+        mymess.setFaq(new FAQ(faqItems));
+        mymess.addFeedback(new Feedback(LocalDate.now(), "Food quality is not upto the mark.", "The taste of the food is not very good, neither they are cooked well."));
+        mymess.addFeedback(new Feedback(LocalDate.now(), "Hygiene.", "Please improve upon hygiene"));
+                
         int sid = 184005;
 
         while (true) {
@@ -270,10 +278,12 @@ class Test {
 
             else if (op == 6) {
                 // FAQ
+                mymess.getFaq().print();
             }
 
             else if (op == 7) {
-                // feedback
+                System.out.println("Feedbacks :");
+                mymess.getFeedbacks().forEach((e) -> e.print());
             }
 
             else {

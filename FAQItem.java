@@ -45,4 +45,11 @@ public class FAQItem {
     public String toString() {
         return "FAQItem{" + "date=" + date + ", ques='" + ques + '\'' + ", ans='" + ans + '\'' + '}';
     }
+
+    public void print(){
+        System.out.println("Asked On: " + date);
+        System.out.println("    Q. " + ques);
+        System.out.println("    A. " + ans);
+        System.out.println();
+    }
 }

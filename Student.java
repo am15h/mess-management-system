@@ -1,4 +1,4 @@
-public class Student {
+public class Student{
 
     private long enrollNo;
     private String name;
@@ -6,7 +6,7 @@ public class Student {
     private long phoneNo;
     private String email;
 
-    public Student(long mEnrollNo, String mName, String mHostel, long mPhoneNo, String mEmail)  {
+    public Student(long mEnrollNo, String mName, String mHostel, long mPhoneNo, String mEmail){
         this.enrollNo = mEnrollNo;
         this.hostel = mHostel;
         this.name = mName;
@@ -14,12 +14,15 @@ public class Student {
         this.email = mEmail;
     }
 
-    this.enrollNo=enrollNo;this.name=name;this.hostel=hostel;
 
+    public Student(long enrollNo, String name, String hostel) {
+        this.enrollNo = enrollNo;
+        this.name = name;
+        this.hostel = hostel;
     }
 
-    public void updateStudentInfo(String newHostel, long newPhoneNo, String newEmail) {
-        hostel = newHostel; 
+    public void updateStudentInfo(String newHostel, long newPhoneNo, String newEmail){
+        hostel = newHostel;
         email = newEmail;
         phoneNo = newPhoneNo;
     }
@@ -66,11 +69,6 @@ public class Student {
 
     @Override
     public String toString() {
-<<<<<<< HEAD
-        return "Student{" + "enrollNo=" + enrollNo + ", name='" + name + '\'' + ", hostel='" + hostel + '\''
-                + ", phoneN   
-                   
-=======
         return "Student{" +
                 "enrollNo=" + enrollNo +
                 ", name='" + name + '\'' +
@@ -79,6 +77,7 @@ public class Student {
                 ", email='" + email + '\'' +
                 '}';
     }
+
 
     public void print()
     {
@@ -92,4 +91,4 @@ public class Student {
 //    System.out.println("Shift End Time   :   " + shiftEnd );
     System.out.println();
     }
-}>>>>>>>2e5 a962c3d4fcfc6163c0dd477b3d74bfccc4016
+}

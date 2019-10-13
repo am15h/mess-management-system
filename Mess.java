@@ -1,6 +1,5 @@
 import java.util.*;
 import java.time.*;
-import java.util.List;
 
 public class Mess {
     private DailyWastage dailyWastage;
@@ -12,6 +11,7 @@ public class Mess {
     private List<LocalTime> timings;
     private List<Student> students;
     private WeekMenu weekMenu;
+    private List<Feedback> feedbacks;
 
     public Mess() {
 
@@ -101,5 +101,16 @@ public class Mess {
 
     public void addWorker(Worker worker) {
         workers.add(worker);
+    }
+
+    public List<Feedback> getFeedbacks(){
+        return feedbacks;
+    }
+
+    public void addFeedback(Feedback feedback){
+        if (feedbacks == null){
+            feedbacks = new ArrayList<>();
+        }
+        feedbacks.add(feedback);
     }
 }

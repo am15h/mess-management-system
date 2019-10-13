@@ -39,4 +39,10 @@ public class FAQ {
         return "FAQ{" + "totalQues=" + totalQues + ", totalAnswers=" + totalAnswers + ", faqs=" + faqs
                 + ", totalUnanswerd=" + (totalQues - totalAnswers) + '}';
     }
+
+    public void print(){
+        System.out.println();
+        System.out.println("FAQ for Mess");
+        faqs.forEach((e)->e.print());
+    }
 }

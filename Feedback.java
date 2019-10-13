@@ -40,4 +40,12 @@ public class Feedback {
     public void setDesc(String desc) {
         this.desc = desc;
     }
+
+    public void print(){
+
+        System.out.println("Feedback");
+        System.out.println("Date : " + date);
+        System.out.println("    Title : " + title);
+        System.out.println("    Desc  : " + desc);
+    }
 }
