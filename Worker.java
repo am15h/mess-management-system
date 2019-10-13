@@ -1,3 +1,4 @@
+import java.time.*;
 public class Worker
 {
     private long workerId;
@@ -8,7 +9,7 @@ public class Worker
     private LocalTime shiftStart;
     private LocalTime shiftEnd;
 
-    public WorkerInfo(long workerId ,String Name , String Hostel , long phoneNo , long salary , LocalTime shiftStart , LocalTime shiftEnd)
+    public Worker(long workerId ,String Name , String Hostel , long phoneNo , long salary , LocalTime shiftStart , LocalTime shiftEnd)
     {
         this.workerId = workerId;
         this.Name = Name;
