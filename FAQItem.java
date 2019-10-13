@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class FAQItem{
+public class FAQItem {
 
     private LocalDate date;
     private String ques;
@@ -43,10 +43,6 @@ public class FAQItem{
 
     @Override
     public String toString() {
-        return "FAQItem{" +
-                "date=" + date +
-                ", ques='" + ques + '\'' +
-                ", ans='" + ans + '\'' +
-                '}';
+        return "FAQItem{" + "date=" + date + ", ques='" + ques + '\'' + ", ans='" + ans + '\'' + '}';
     }
 }

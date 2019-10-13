@@ -1,4 +1,4 @@
-public class Student{
+public class Student  {
 
     private long enrollNo;
     private String name;
@@ -6,7 +6,7 @@ public class Student{
     private long phoneNo;
     private String email;
 
-    public Student(long mEnrollNo, String mName, String mHostel, long mPhoneNo, String mEmail){
+    public Student(long mEnrollNo, String mName, String mHostel, long mPhoneNo, String mEmail)  {
         this.enrollNo = mEnrollNo;
         this.hostel = mHostel;
         this.name = mName;
@@ -14,15 +14,13 @@ public class Student{
         this.email = mEmail;
     }
 
-
-    public Student(long enrollNo, String name, String hostel) {
         this.enrollNo = enrollNo;
         this.name = name;
         this.hostel = hostel;
     }
 
-    public void updateStudentInfo(String newHostel, long newPhoneNo, String newEmail){
-        hostel = newHostel;
+    public void updateStudentInfo(String newHostel, long newPhoneNo, String newEmail) {
+        hostel = newHostel; 
         email = newEmail;
         phoneNo = newPhoneNo;
     }
@@ -69,12 +67,6 @@ public class Student{
 
     @Override
     public String toString() {
-        return "Student{" +
-                "enrollNo=" + enrollNo +
-                ", name='" + name + '\'' +
-                ", hostel='" + hostel + '\'' +
-                ", phoneNo=" + phoneNo +
-                ", email='" + email + '\'' +
-                '}';
-    }
-}
+        return "Student{" + "enrollNo=" + enrollNo + ", name='" + name + '\'' + ", hostel='" + hostel + '\''
+                + ", phoneN   
+                   

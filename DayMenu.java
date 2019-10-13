@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.time.*;
 import java.util.List;
 
-public class DayMenu{
+public class DayMenu {
 
     private LocalDate mDate;
     private List<Meal> mMeals;
@@ -13,7 +13,7 @@ public class DayMenu{
         this.mMeals = mMeals;
     }
 
-    public void addMeal(Meal meal){
+    public void addMeal(Meal meal) {
         mMeals.add(meal);
     }
 
@@ -21,8 +21,8 @@ public class DayMenu{
         return mMeals;
     }
 
-    public void print(){
+    public void print() {
         System.out.println("Date: " + mDate.toString());
-        mMeals.forEach((meal)->meal.print());
+        mMeals.forEach((meal) -> meal.print());
     }
 }

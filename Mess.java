@@ -2,7 +2,7 @@ import java.util.*;
 import java.time.*;
 import java.util.List;
 
-public class Mess{
+public class Mess {
     private DailyWastage dailyWastage;
     private FixedExpense fixedExpense;
     private WeeklyExpense weeklyExpense;
@@ -19,11 +19,11 @@ public class Mess{
         this.students = students;
     }
 
-    public WeekMenu getWeekMenu(){
+    public WeekMenu getWeekMenu() {
         return weekMenu;
     }
 
-    public void setWeekMenu(WeekMenu weekMenu){
+    public void setWeekMenu(WeekMenu weekMenu) {
         this.weekMenu = weekMenu;
     }
 
@@ -91,11 +91,11 @@ public class Mess{
         this.students = students;
     }
 
-    public void addStudent(Student student){
+    public void addStudent(Student student) {
         students.add(student);
     }
 
-    public void addWorker(Worker worker){
+    public void addWorker(Worker worker) {
         workers.add(worker);
     }
 }

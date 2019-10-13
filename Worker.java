@@ -1,6 +1,6 @@
 import java.time.*;
-public class Worker
-{
+
+public class Worker {
     private long workerId;
     private String Name;
     private String Hostel;
@@ -9,8 +9,8 @@ public class Worker
     private LocalTime shiftStart;
     private LocalTime shiftEnd;
 
-    public Worker(long workerId ,String Name , String Hostel , long phoneNo , long salary , LocalTime shiftStart , LocalTime shiftEnd)
-    {
+    public Worker(long workerId, String Name, String Hostel, long phoneNo, long salary, LocalTime shiftStart,
+            LocalTime shiftEnd) {
         this.workerId = workerId;
         this.Name = Name;
         this.Hostel = Hostel;
@@ -20,8 +20,8 @@ public class Worker
         this.shiftEnd = shiftEnd;
     }
 
-    public void UpdateInfo(String newHostel , long newPhoneNo , long newSalary , LocalTime    newshiftStart , LocalTime newShiftEnd)
-    {
+    public void UpdateInfo(String newHostel, long newPhoneNo, long newSalary, LocalTime newshiftStart,
+            LocalTime newShiftEnd) {
         Hostel = newHostel;
         phoneNo = newPhoneNo;
         salary = newSalary;

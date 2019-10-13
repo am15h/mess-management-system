@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.time.*;
 import java.util.List;
 
-public class WeekMenu{
+public class WeekMenu {
     private int weekId;
     private List<DayMenu> menus;
 
@@ -12,8 +12,8 @@ public class WeekMenu{
         this.menus = mMenus;
     }
 
-    public void modifyWeekMenu(DayMenu menu){
-	this.menus.add(menu);
+    public void modifyWeekMenu(DayMenu menu) {
+        this.menus.add(menu);
     }
 
     public int getWeekId() {
@@ -32,9 +32,9 @@ public class WeekMenu{
         this.menus = menus;
     }
 
-    public void print(){
+    public void print() {
         System.out.println("WeekId :" + weekId + "\n");
-        menus.forEach((e)->e.print());
+        menus.forEach((e) -> e.print());
     }
-    
+
 }

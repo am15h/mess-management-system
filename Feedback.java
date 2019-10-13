@@ -1,7 +1,6 @@
 import java.time.*;
 
-
-public class Feedback{
+public class Feedback {
 
     private LocalDate date;
     private String title;

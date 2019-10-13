@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class FAQ{
+public class FAQ {
 
     private int totalQues;
     private int totalAnswers;
@@ -36,11 +36,7 @@ public class FAQ{
 
     @Override
     public String toString() {
-        return "FAQ{" +
-                "totalQues=" + totalQues +
-                ", totalAnswers=" + totalAnswers +
-                ", faqs=" + faqs +
-                ", totalUnanswerd=" + (totalQues-totalAnswers) +
-                '}';
+        return "FAQ{" + "totalQues=" + totalQues + ", totalAnswers=" + totalAnswers + ", faqs=" + faqs
+                + ", totalUnanswerd=" + (totalQues - totalAnswers) + '}';
     }
 }
