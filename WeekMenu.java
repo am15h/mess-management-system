@@ -33,8 +33,11 @@ public class WeekMenu{
     }
 
     public void print(){
-        System.out.println("WeekId :" + weekId + "\n");
+	System.out.println();
+        System.out.println("WeekId : " + weekId + "\n");
+	System.out.println();
         menus.forEach((e)->e.print());
+	System.out.println();
     }
     
 }

@@ -22,7 +22,10 @@ public class DayMenu{
     }
 
     public void print(){
+	System.out.println();
         System.out.println("Date: " + mDate.toString());
+	System.out.println();
         mMeals.forEach((meal)->meal.print());
+	System.out.println();
     }
 }

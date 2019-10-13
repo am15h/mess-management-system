@@ -33,13 +33,13 @@ public class Meal {
     public void print(){
         switch (mMealType){
             case 0:
-                System.out.println("    Breakfast: " + mMealItems);
+                System.out.println("    Breakfast :    " + mMealItems);
                 break;
             case 1:
-                System.out.println("    Lunch: " + mMealItems);
+                System.out.println("    Lunch     :    " + mMealItems);
                 break;
             case 2:
-                System.out.println("    Dinner: " + mMealItems);
+                System.out.println("    Dinner    :    " + mMealItems);
                 break;
         }
     }

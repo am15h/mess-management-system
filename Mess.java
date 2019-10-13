@@ -12,6 +12,11 @@ public class Mess{
     private List<LocalTime> timings;
     private List<Student> students;
     private WeekMenu weekMenu;
+    
+    public Mess()
+    {
+
+    }
 
     public Mess(List<Worker> workers, Worker manager, List<Student> students) {
         this.workers = workers;

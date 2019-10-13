@@ -77,4 +77,18 @@ public class Student{
                 ", email='" + email + '\'' +
                 '}';
     }
+
+
+    public void print()
+    {
+    System.out.println();
+    System.out.println("Student Id       :   " + enrollNo );
+    System.out.println("Name             :   " + name );
+    System.out.println("Hostel           :   " + hostel );
+    System.out.println("Phone Number     :   " + phoneNo );
+    System.out.println("Email Id         :   " + email );
+//    System.out.println("Shift Start Time :   " + shiftStart );
+//    System.out.println("Shift End Time   :   " + shiftEnd );
+    System.out.println();
+    }
 }

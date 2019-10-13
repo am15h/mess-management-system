@@ -20,7 +20,7 @@ public class FixedExpense {
 
     public void print() {
         System.out.println("The Fixed Expenses Are :- ");
-        System.out.println("Title		Expense");
+        System.out.println("Title		Expense(in Rs.)");
         Set set = expenses.entrySet();
         Iterator itr = set.iterator();
         while (itr.hasNext()) {

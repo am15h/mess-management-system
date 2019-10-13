@@ -28,6 +28,19 @@ public class Worker
         shiftStart = newshiftStart;
         shiftEnd = newShiftEnd;
     }
+    
+    public void print()
+    {
+	System.out.println();
+	System.out.println("Worker Id        :   " + workerId );
+	System.out.println("Name             :   " + Name );
+	System.out.println("Hostel           :   " + Hostel );
+	System.out.println("Phone Number     :   " + phoneNo );
+	System.out.println("Salary           :   " + salary );
+	System.out.println("Shift Start Time :   " + shiftStart );
+	System.out.println("Shift End Time   :   " + shiftEnd );
+	System.out.println();
+    }
 
     public long getWorkerId() {
         return workerId;
