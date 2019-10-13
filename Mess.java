@@ -10,11 +10,20 @@ public class Mess{
     private FAQ faq;
     private List<LocalTime> timings;
     private List<Student> students;
+    private WeekMenu weekMenu;
 
     public Mess(List<Worker> workers, Worker manager, List<Student> students) {
         this.workers = workers;
         this.manager = manager;
         this.students = students;
+    }
+
+    public WeekMenu getWeekMenu(){
+        return weekMenu;
+    }
+
+    public void setWeekMenu(WeekMenu weekMenu){
+        this.weekMenu = weekMenu;
     }
 
     public DailyWastage getDailyWastage() {
