@@ -1,4 +1,4 @@
-public class Student  {
+public class Student {
 
     private long enrollNo;
     private String name;
@@ -14,9 +14,8 @@ public class Student  {
         this.email = mEmail;
     }
 
-        this.enrollNo = enrollNo;
-        this.name = name;
-        this.hostel = hostel;
+    this.enrollNo=enrollNo;this.name=name;this.hostel=hostel;
+
     }
 
     public void updateStudentInfo(String newHostel, long newPhoneNo, String newEmail) {
@@ -67,6 +66,30 @@ public class Student  {
 
     @Override
     public String toString() {
+<<<<<<< HEAD
         return "Student{" + "enrollNo=" + enrollNo + ", name='" + name + '\'' + ", hostel='" + hostel + '\''
                 + ", phoneN   
                    
+=======
+        return "Student{" +
+                "enrollNo=" + enrollNo +
+                ", name='" + name + '\'' +
+                ", hostel='" + hostel + '\'' +
+                ", phoneNo=" + phoneNo +
+                ", email='" + email + '\'' +
+                '}';
+    }
+
+    public void print()
+    {
+    System.out.println();
+    System.out.println("Student Id       :   " + enrollNo );
+    System.out.println("Name             :   " + name );
+    System.out.println("Hostel           :   " + hostel );
+    System.out.println("Phone Number     :   " + phoneNo );
+    System.out.println("Email Id         :   " + email );
+//    System.out.println("Shift Start Time :   " + shiftStart );
+//    System.out.println("Shift End Time   :   " + shiftEnd );
+    System.out.println();
+    }
+}>>>>>>>2e5 a962c3d4fcfc6163c0dd477b3d74bfccc4016

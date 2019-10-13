@@ -25,7 +25,7 @@ public class WeeklyExpense {
 	public void print() {
 		System.out.println("The Week Starts From The Date : " + startOfWeek.toString());
 		System.out.println("The Weekly Expenses Are :- ");
-		System.out.println("Title			Expense");
+		System.out.println("Title			Expense(in Rs.)");
 		Set set = expenses.entrySet();
 		Iterator itr = set.iterator();
 		while (itr.hasNext()) {

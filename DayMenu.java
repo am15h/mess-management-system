@@ -24,5 +24,6 @@ public class DayMenu {
     public void print() {
         System.out.println("Date: " + mDate.toString());
         mMeals.forEach((meal) -> meal.print());
+
     }
 }

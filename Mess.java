@@ -13,6 +13,10 @@ public class Mess {
     private List<Student> students;
     private WeekMenu weekMenu;
 
+    public Mess() {
+
+    }
+
     public Mess(List<Worker> workers, Worker manager, List<Student> students) {
         this.workers = workers;
         this.manager = manager;

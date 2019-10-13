@@ -30,6 +30,8 @@ public class Meal {
         mMealItems = items;
     }
 
+    <<<<<<<HEAD
+
     public void print() {
         switch (mMealType) {
         case 0:
@@ -41,6 +43,20 @@ public class Meal {
         case 2:
             System.out.println("    Dinner: " + mMealItems);
             break;
+=======
+
+    public void print(){
+        switch (mMealType){
+            case 0:
+                System.out.println("    Breakfast :    " + mMealItems);
+                break;
+            case 1:
+                System.out.println("    Lunch     :    " + mMealItems);
+                break;
+            case 2:
+                System.out.println("    Dinner    :    " + mMealItems);
+                break;
+>>>>>>> 2e5a962c3d4fcfc6163c0dd477b3d74bfccc4016
         }
     }
 }

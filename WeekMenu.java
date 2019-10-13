@@ -32,9 +32,20 @@ public class WeekMenu {
         this.menus = menus;
     }
 
+    <<<<<<<HEAD
+
     public void print() {
         System.out.println("WeekId :" + weekId + "\n");
         menus.forEach((e) -> e.print());
+=======
+
+    public void print(){
+	System.out.println();
+        System.out.println("WeekId : " + weekId + "\n");
+	System.out.println();
+        menus.forEach((e)->e.print());
+	System.out.println();
+>>>>>>> 2e5a962c3d4fcfc6163c0dd477b3d74bfccc4016
     }
 
 }
