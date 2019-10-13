@@ -7,10 +7,19 @@ public class Meal {
 
     private int mMealType;
     private List<String> mMealItems;
+    private List<Feedback> feedBacks;
 
     public Meal(int mMealType, List<String> mMealItems) {
         this.mMealType = mMealType;
         this.mMealItems = mMealItems;
+    }
+    
+    public List<Feedback> getFeebacks(){
+        return feedBacks;
+    }
+
+    public void addFeedback(Feedback feedback){
+        feedBacks.add(feedback);
     }
 
     public void addMealItems(List<String> items){
