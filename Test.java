@@ -282,8 +282,38 @@ class Test {
             }
 
             else if (op == 7) {
-                System.out.println("Feedbacks :");
-                mymess.getFeedbacks().forEach((e) -> e.print());
+		while(true)
+		{
+		    System.out.println();
+		    System.out.println("Please Select Suboption :- ");
+                    System.out.println("	    1. View Feedbacks.");
+                    System.out.println("	    2. Add New Feedback.");
+                    System.out.println("	    3. Exit");
+		    System.out.println();
+		    int subop = in.nextInt();
+		    if(subop == 1)
+		    {
+	                System.out.println("Feedbacks :");
+		        mymess.getFeedbacks().forEach((e) -> e.print());
+		    }
+		    else if(subop == 2)
+		    {
+			in.nextLine();
+			System.out.print("Please Enter Title : ");
+			String title = in.nextLine();
+			System.out.println();
+			System.out.print("Please Enter Description : ");
+			String desc = in.nextLine();
+			System.out.println();
+		        mymess.addFeedback(new Feedback(LocalDate.now() , title , desc));
+		    }
+		    else
+		    {
+			break;
+		    }
+
+		}
+
             }
 
             else {
